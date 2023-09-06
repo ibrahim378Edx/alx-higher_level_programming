@@ -8,3 +8,4 @@ elif int(value[-1:]) == 0:
     print(f"{number} and {value[-1:]} is 0")
 else:
     print(f"{number} and {value[-1:]} is less than 6 and not 0")
+    
