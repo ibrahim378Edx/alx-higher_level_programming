@@ -5,5 +5,5 @@ def pow(a, b):
         if b > 0:
             z *= a
         else:
-            z /= a
+            z = z / a
     return z
