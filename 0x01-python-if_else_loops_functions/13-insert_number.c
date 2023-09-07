@@ -44,6 +44,7 @@ else
 new->next = NULL;
 new->n = number;
 temp->next = new;
+return (new);
 }
 }
 new->next = mover;
