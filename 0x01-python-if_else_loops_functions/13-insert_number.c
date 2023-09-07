@@ -34,7 +34,7 @@ return (new);
 }
 while (mover->n < number)
 {
-if (mover != NULL)
+if (mover->next != NULL)
 {
 temp = mover;
 mover = mover->next;
@@ -43,7 +43,7 @@ else
 {
 new->next = NULL;
 new->n = number;
-temp->next = new;
+mover->next = new;
 return (new);
 }
 }
