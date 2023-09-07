@@ -20,6 +20,7 @@ return (NULL);
 }
 if (!*head)
 {
+*head = new;
 new->n = number;
 new->next = NULL;
 return (new);
