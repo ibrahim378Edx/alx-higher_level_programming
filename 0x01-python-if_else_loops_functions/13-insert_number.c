@@ -18,10 +18,17 @@ if (!new)
 {
 return (NULL);
 }
+if (!*head)
+{
+new->n = number;
+new->next = NULL;
+return (new);
+}
 if ((*head)->n > number)
 {
 new->n = number;
 new->next = *head;
+*head = new;
 return (new);
 }
 while (mover->n < number)
