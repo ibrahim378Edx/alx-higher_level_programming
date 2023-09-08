@@ -4,7 +4,7 @@ if __name__ == "__main__":
     """
 
     Print all names in hidden4
-    
+
     """
     import hidden_4
 
