@@ -1,21 +1,18 @@
 #!/usr/bin/python3
-import sys
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     """
-    Prints passed arguments
-
+    
+    Prints args and amount
+    
     """
-    argument = sys.argv
-    arg = len(argument) - 1
+    import sys
 
-    if arg > 1:
-        print(arg, 'arguments:')
-        for i in range(1, arg + 1):
-            print('{:d}: {}'.format(i, arg[i]))
-    elif arg == 1:
-        print(arg, 'argument:')
-        for i in range(1, arg + 1):
-            print('{:d}: {}'.format(i, arg[i]))
-    elif arg == 0:
-        print(arg, 'arguments.')
+    c = len(sys.argv) - 1
+    if c == 0:
+        print("0 arguments.")
+    elif c == 1:
+        print("1 argument:")
+    else:
+        print("{} arguments:".format(c))
+    for i in range(c):
+        print("{}: {}".format(i + 1, sys.argv[i + 1]))

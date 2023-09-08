@@ -1,9 +1,14 @@
 #!/usr/bin/python3
-import hidden_4
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+    """
+
+    Print all names in hidden4
+    
+    """
+    import hidden_4
+
     namer = dir(hidden_4)
-
-    for i in range(len(namer)):
-        if namer[i][:2] != '__':
-            print(namer[i])
+    for name in namer:
+        if name[:2] != "__":
+            print(name)
