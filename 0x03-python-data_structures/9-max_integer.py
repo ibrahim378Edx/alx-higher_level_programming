@@ -4,8 +4,8 @@ def max_integer(my_list=[]):
         return None
 
     q = min(my_list)
-    for i in my_list:
-        if i > q:
-            q = i
+    for item in my_list:
+        if item > q:
+            q = item
 
     return q
