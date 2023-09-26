@@ -14,7 +14,7 @@ class Square:
         The __init__ method initializes the size value
         of the square.
 
-        Attributes:
+        Args:
             size (int): The size of the square.
 
         """
