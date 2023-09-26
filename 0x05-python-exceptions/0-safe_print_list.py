@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    if len(my_list) == 0:
-        print("")
+    if not bool(my_list) == 0:
         return 0
     for i in range(0, x):
         try:
