@@ -6,5 +6,5 @@ Square Class
 """
 
 
-class Square:
+class Square():
     pass
