@@ -7,4 +7,7 @@ Square Class
 
 
 class Square():
+    """
+    Empty class
+    """
     pass
