@@ -7,7 +7,9 @@ Square Class
 
 
 class Square:
-
+    """
+    class for square
+    """
     def __init__(self, size):
         """__init__
 
