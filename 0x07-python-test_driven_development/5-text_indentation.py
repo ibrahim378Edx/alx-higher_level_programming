@@ -1,30 +1,53 @@
 #!/usr/bin/python3
+"""
+module to add new line at . / ? / :
+    * There should be no space at the beginning or
+    at the end of each printed line
 
-"""Defines a text-indentation function."""
+"""
 
 
 def text_indentation(text):
-    """Print newline after  '.', '?', and ':'.
+    """
+
+    Prints a text with indentation
 
     Args:
-        text : txt to scan
+        text : the text to work on
+
     Raises:
-        TypeError: if no txt
+        TypeError: If `text` isn't string.
+
     """
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
 
-    c = 0
-    while c < len(text) and text[c] == ' ':
-        z += 1
+    if type(text) is not str:
+        raise TypeError('text must be a string')
 
-    while z < len(text):
-        print(text[z], end="")
-        if text[z] == "\n" or text[c] in ".?:":
-            if text[z] in ".?:":
-                print("\n")
-            c += 1
-            while c < len(text) and text[c] == ' ':
-                c += 1
+    text_length = len(text)
+    idx = 0
+    new_string = ''
+    starting = True
+
+    while idx < text_length:
+        if text[idx] == ' ' and starting is True:
+            idx += 1
             continue
-        c += 1
+
+        starting = False
+
+        if text[idx] in '.?:':
+            new_string += text[idx]
+            new_string += '\n'
+            new_string += '\n'
+            idx += 1
+
+            while idx < text_length and text[idx] == ' ':
+                idx += 1
+
+            continue
+
+        if idx < text_length:
+            new_string += text[idx]
+            idx += 1
+
+    print(new_string, end='')
