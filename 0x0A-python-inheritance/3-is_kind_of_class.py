@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""
+module to check on a class
+"""
 def is_kind_of_class(obj, a_class):
     """
     Checks if `obj`
