@@ -4,7 +4,7 @@
 
 
 def append_write(filename="", text=""):
-    """Appends a string to 
+    """Appends a string to
 
     Args:
         filename (str): The name of the file to append to
